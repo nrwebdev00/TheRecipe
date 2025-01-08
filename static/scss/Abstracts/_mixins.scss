@@ -1,0 +1,18 @@
+@mixin default-font{
+  font-family: "Abril Fatface", serif;
+  color: $color-default-font;
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: inherit;
+}
+
+@mixin title-font{
+  font-family: "Chewy", serif;
+  color: $color-primary;
+  line-height: 1.75;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: inherit;
+  text-shadow: $title-shadow;
+}

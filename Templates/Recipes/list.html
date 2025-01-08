@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 {% block title %}List of Recipes{% endblock %}
 {% block content %}
-    <h1>New List to Come Soon</h1>
+    <div class="recipe-list">
+        <h1 class="title-font font-shadow">New List to Come Soon</h1>
+        <ul class="recipe-wrapper default-font">
+            {% for recipe in recipes %}
+                <li class="recipe-item card-recipe">
+                    <div class="li-title">{{ recipe.title }}</div>
+                    <div class="li-author">By: {{ recipe.author }}, publish on: {{ recipe.publish }}.</div>
+                    <div class="li-ingredients">{{ recipe.ingredients|truncatewords:50 }}</div>
+                    <div class="li-directions">{{ recipe.directions|truncatewords:50 }}</div>
+                    <a href="#" class="li-link btn">Recipe Detail not working</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

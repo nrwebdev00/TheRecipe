@@ -1,0 +1,12 @@
+
+h1{
+  @include title-font;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2{
+  @include default-font;
+  text-align: center;
+  font-size: 2.25em;
+}

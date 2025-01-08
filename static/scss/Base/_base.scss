@@ -1,0 +1,8 @@
+@import 'animations';
+@import 'reset';
+@import 'typography';
+
+body{
+  background-color: $color-background;
+  color: $color-default-font
+}

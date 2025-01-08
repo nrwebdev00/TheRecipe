@@ -1,0 +1,46 @@
+.recipe-list{
+  padding: .5em .5em;
+  width: 95%;
+  margin: .5em auto;
+  h1{
+    margin-bottom: .5em;
+    text-align: center;
+    @include title-font;
+  }
+  ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    list-style: none;
+
+    li{
+      padding: .5em .25em;
+      display: flex;
+      flex-direction: column;
+      gap: .25em;
+      @include default-font;
+
+      .li-title{
+        text-align: center;
+        font-size: 1.5em;
+        text-transform: capitalize;
+      }
+      .li-author{
+        font-size: .95em;
+        text-wrap: pretty;
+      }
+      .li-ingredients{
+        margin-bottom: .25em;
+      }
+      .li-directions{
+        margin-bottom: .25em;
+      }
+      .li-link{
+        width: 75%;
+        margin: .5em auto;
+      }
+    }
+  }
+}

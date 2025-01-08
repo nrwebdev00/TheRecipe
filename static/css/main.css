@@ -1,3 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.75;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, a:visted, a:focus, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1 {
+  font-family: "Chewy", serif;
+  color: hsl(29, 94%, 56%);
+  line-height: 1.75;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: inherit;
+  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  text-align: center;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: "Abril Fatface", serif;
+  color: hsl(232, 21%, 20%);
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: inherit;
+  text-align: center;
+  font-size: 2.25em;
+}
+
+body {
+  background-color: hsl(42, 45%, 90%);
+  color: hsl(232, 21%, 20%);
+}
+
+.btn {
+  color: hsl(63, 23%, 85%);
+  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+  text-decoration: none;
+  border: 1px solid hsl(29, 94%, 56%);
+  background-color: hsl(29, 94%, 56%);
+  box-shadow: 2px 2px 4px hsl(232, 21%, 20%);
+  text-align: center;
+}
+
+.recipe-list {
+  padding: 0.5em 0.5em;
+  width: 95%;
+  margin: 0.5em auto;
+}
+.recipe-list h1 {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-family: "Chewy", serif;
+  color: hsl(29, 94%, 56%);
+  line-height: 1.75;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: inherit;
+  text-shadow: 3px 3px 6px hsl(232, 21%, 20%);
+}
+.recipe-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  list-style: none;
+}
+.recipe-list ul li {
+  padding: 0.5em 0.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  font-family: "Abril Fatface", serif;
+  color: hsl(232, 21%, 20%);
+  line-height: 1.75;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: inherit;
+}
+.recipe-list ul li .li-title {
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+.recipe-list ul li .li-author {
+  font-size: 0.95em;
+  text-wrap: pretty;
+}
+.recipe-list ul li .li-ingredients {
+  margin-bottom: 0.25em;
+}
+.recipe-list ul li .li-directions {
+  margin-bottom: 0.25em;
+}
+.recipe-list ul li .li-link {
+  width: 75%;
+  margin: 0.5em auto;
+}
 
 /*# sourceMappingURL=main.css.map */
