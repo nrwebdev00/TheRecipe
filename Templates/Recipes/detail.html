@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Recipe: {{ recipe.title|truncatechars:15  }}{% endblock %}
+{% block content %}
+    <div class="recipe_detail">
+        <h2>{{ recipe.title }}</h2>
+        <h5>By: {{ recipe.author }}, published on: {{ recipe.created }}</h5>
+        <p>{{ recipe.ingredient }}</p>
+        <p>{{ recipe.description }}</p>
+    </div>
+{% endblock %}
